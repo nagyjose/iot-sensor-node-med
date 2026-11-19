@@ -72,7 +72,15 @@ flowchart TD
 
 ---
 
-## 3. Hardware Specifications & Pin Mapping
+## 3. Schematic & Circuit Diagram
+
+![IoT Sensor Node Medium Schematic](docs/images/schematic.png)
+
+📄 [Open original high-resolution schematic (PDF)](Sensor-node_med.pdf)
+
+---
+
+## 4. Hardware Specifications & Pin Mapping
 
 ### Microcontroller Pin Allocation
 
@@ -111,7 +119,7 @@ flowchart TD
 
 ---
 
-## 4. PCB Design & Physical Dimensions
+## 5. PCB Design & Physical Dimensions
 
 - **PCB Dimensions:** 48.95 mm × 73.90 mm (1.93" × 2.91")
 - **Layer Count:** 2 layers (Top Copper, Bottom Copper)
@@ -121,10 +129,13 @@ flowchart TD
 
 ---
 
-## 5. Repository Structure
+## 6. Repository Structure
 
 ```text
 .
+├── docs/
+│   └── images/
+│       └── schematic.png  # High-resolution schematic preview (180 DPI)
 ├── Sensor-node_med.sch    # Autodesk Eagle schematic
 ├── Sensor-node_med.brd    # Autodesk Eagle PCB layout
 ├── Sensor-node_med.pdf    # Complete schematic and board PDF documentation
@@ -136,7 +147,7 @@ flowchart TD
 
 ---
 
-## 6. How to Use & Firmware Deployment
+## 7. How to Use & Firmware Deployment
 
 ### Hardware Assembly & Inspection
 1. Inspect PCB solder joints around the SOT-23 and SOT-26 packages (`MCP73831T`, `AP9101C`, MOSFETs).
@@ -169,7 +180,7 @@ def read_battery_voltage():
 
 ---
 
-## 7. Relations & Ecosystem Links
+## 8. Relations & Ecosystem Links
 
 This project is part of a modular IoT sensor ecosystem:
 - **[`iot-sensor-node-max`](https://github.com/nagyjose/iot-sensor-node-max):** Sister project providing a dual-18650 battery bank, dual independent chargers, dual I2C expansion headers, dual SPI expansion headers, and external ADC input.
@@ -178,7 +189,7 @@ This project is part of a modular IoT sensor ecosystem:
 
 ---
 
-## 8. License & Author
+## 9. License & Author
 
 - **Author:** Josef Nagy (`nagyjose`)
 - **Design Tool:** Autodesk Eagle v9.x
