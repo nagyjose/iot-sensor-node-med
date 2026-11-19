@@ -1,0 +1,17 @@
+# Autodesk / CadSoft Eagle temporary and backup files
+*.b#*
+*.s#*
+*.l#*
+*.b$$
+*.s$$
+*.job
+*.pro
+eagle.epf
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.bak
